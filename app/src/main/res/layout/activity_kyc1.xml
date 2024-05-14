@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".KYC1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="KYC verification"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/verdigris"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Note: Be ready with your Pan Card"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:drawableLeft="@drawable/baseline_camera_enhance_24"
+        android:text="Take a snapshot of your Pan Card"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:backgroundTint="@color/b_blue"/>
+
+    <ImageView
+        android:id="@+id/imageViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

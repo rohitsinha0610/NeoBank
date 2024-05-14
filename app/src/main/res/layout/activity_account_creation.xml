@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sinlogbg"
+    tools:context=".AccountCreation">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neo Bank Saving Account"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:textColor="@color/verdigris"
+                android:textStyle="bold"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Permanent Address"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginTop="15dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/stateTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:text="State*"
+                android:textSize="14sp"
+                android:padding="4dp"/>
+
+            <Spinner
+                android:id="@+id/indianState"
+                android:layout_width="match_parent"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/districtTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="4dp"
+                android:text="District*"
+                android:textSize="14sp"
+                android:padding="4dp"/>
+
+            <Spinner
+                android:id="@+id/stateDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/addressSubmitBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/b_blue"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
